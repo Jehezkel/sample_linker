@@ -1,1 +1,15 @@
 GET http://localhost:7000
+###
+GET http://localhost:7000/users
+###
+POST http://localhost:7000/users/signin
+content-type: application/json
+
+{
+    "login":"admin",
+    "pass":"pass123"
+}
+###
+GET http://localhost:7000/users/check
+x-access-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyUGF5bG9hZCI6eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOiJhc2pka2xhc2pkbGthc2pka2xhc2oiLCJlbWFpbCI6ImFkbWluQGdvb2dsZS5wbCJ9LCJpYXQiOjE2NzcyODEyOTN9.x4u_djH65dc80lk9JMmo_nq9lR5R1WjWKv0DzOoMeB0
+
