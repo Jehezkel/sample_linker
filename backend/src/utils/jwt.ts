@@ -1,10 +1,11 @@
+import { User } from "@prisma/client";
 import jwt from "jsonwebtoken";
 export interface TokenPayload {
   userId: number;
   userName: string;
   email: string;
 }
-export function getUserToken(user: TokenPayload) {
+export function getUserToken(user: User) {
   return jwt.sign(user, getTokenKey(), { expiresIn: "1h" });
 }
 function getTokenKey() {

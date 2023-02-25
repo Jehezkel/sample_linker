@@ -9,7 +9,7 @@
             "request": "launch",
             "name": "Launch Program",
             "runtimeExecutable": "nodemon",
-            "program": "${workspaceFolder}/dist/index.js",
+            "program": "${workspaceFolder}/dist/server.js",
             "skipFiles": [
                 "<node_internals>/**"
             ],

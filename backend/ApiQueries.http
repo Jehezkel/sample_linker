@@ -7,7 +7,7 @@ content-type: application/json
 
 {
     "email":"admin@gmail.com",
-    "pass":"pass1xxx23"
+    "pass":"pass123"
 }
 ###
 POST http://localhost:7000/user/signin
@@ -19,5 +19,23 @@ content-type: application/json
 }
 ###
 GET http://localhost:7000/user/check
-x-access-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyUGF5bG9hZCI6eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOiJhc2pka2xhc2pkbGthc2pka2xhc2oiLCJlbWFpbCI6ImFkbWluQGdvb2dsZS5wbCJ9LCJpYXQiOjE2NzcyODEyOTN9.x4u_djH65dc80lk9JMmo_nq9lR5R1WjWKv0DzOoMeB0
+x-access-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJuYW1lIjoiYWRtaW4iLCJwYXNzd29yZEhhc2giOiIkMmIkMTAkaUFJWXVmb0JrLm1xUUNNdkNaUi5BdW16UENCVXhNTnBhUWxnQXZEM2RNaWtGVVdtRjdvUWkiLCJpYXQiOjE2NzczNTg3MTYsImV4cCI6MTY3NzM2MjMxNn0.MPRlCZeeyC7skHVgxCiajW2hMohFYpCxAxGaU4km-_8
 
+###
+POST http://localhost:7000/user/register
+content-type: application/json
+
+{
+    "email":"newUser@gmail.com",
+    "pass":"Superpassword1",
+    "name":"JorMam"
+}
+
+###
+POST http://localhost:7000/user/signin
+content-type: application/json
+
+{
+    "email":"newUser@gmail.com",
+    "pass":"Superpassword1"
+}
