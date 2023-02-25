@@ -39,3 +39,28 @@ content-type: application/json
     "email":"newUser@gmail.com",
     "pass":"Superpassword1"
 }
+
+###
+GET http://localhost:7000/products
+###
+GET http://localhost:7000/products/1
+###
+POST http://localhost:7000/products
+content-type: application/json
+x-access-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsInVzZXJOYW1lIjoiSm9yTWFtIiwiZW1haWwiOiJuZXdVc2VyQGdtYWlsLmNvbSIsImlhdCI6MTY3NzM2NjM1MCwiZXhwIjoxNjc3MzY5OTUwfQ.gl5GEKDisDUA9BXnMD35ZXUnqDO6lUIPlKNOJqOSztc
+
+{
+    "sku":"testowy prod",
+    "ean":"nowyEan",
+    "name":"kij od szczotki"
+}
+###
+PUT http://localhost:7000/products/1
+content-type: application/json
+x-access-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsInVzZXJOYW1lIjoiSm9yTWFtIiwiZW1haWwiOiJuZXdVc2VyQGdtYWlsLmNvbSIsImlhdCI6MTY3NzM2NjM1MCwiZXhwIjoxNjc3MzY5OTUwfQ.gl5GEKDisDUA9BXnMD35ZXUnqDO6lUIPlKNOJqOSztc
+
+{
+    "sku":"testowy prod",
+    "ean":"nowyEan",
+    "name":"zartowalem"
+}
