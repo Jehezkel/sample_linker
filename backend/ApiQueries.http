@@ -6,7 +6,15 @@ POST http://localhost:7000/user/signin
 content-type: application/json
 
 {
-    "login":"admin",
+    "email":"admin@gmail.com",
+    "pass":"pass1xxx23"
+}
+###
+POST http://localhost:7000/user/signin
+content-type: application/json
+
+{
+    "email":"adminxx",
     "pass":"pass123"
 }
 ###
