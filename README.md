@@ -13,6 +13,8 @@ docker compose up -d
 
 ### Backend
 
+This unnecessary split of app and server was triggered by requirement of supertest
+
 - Prisma - orm for connection with database and models
 - Jest - for testing.
 - Express - for coffe
